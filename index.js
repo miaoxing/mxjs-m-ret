@@ -1,5 +1,7 @@
-import {View, Image} from '@tarojs/components';
+import {View, Image, Block} from '@tarojs/components';
+import {AtActivityIndicator} from 'taro-ui';
 import PropTypes from 'prop-types';
+import './index.scss';
 
 const types = {
   error: 'https://gw.alipayobjects.com/zos/rmsportal/GIyMDJnuqmcqPLpHCSkj.svg',
@@ -31,19 +33,11 @@ const detailStyle = {
   marginBottom: '1rem',
 };
 
-const Container = ({src, message, detail}) => {
-  return (
-    <View style={containerStyle}>
-      <Image src={src} style={imageStyle} mode="center"/>
-      {message && <View style={messageStyle}>{message}</View>}
-      {detail && <View style={detailStyle}>{detail}</View>}
-    </View>
-  );
-};
-
-const Ret = ({ret, children}) => {
+const renderRet = (ret, children) => {
   if (!ret || typeof ret.code === 'undefined') {
-    return '';
+    return <View style={containerStyle}>
+      <AtActivityIndicator content="加载中..." color="var(--mx-colors-primary-500)"/>
+    </View>;
   }
 
   if (ret.code === 0) {
@@ -55,6 +49,15 @@ const Ret = ({ret, children}) => {
     {ret.message && <View style={messageStyle}>{ret.message}</View>}
     {ret.detail && <View style={detailStyle}>{ret.detail}</View>}
   </View>;
+};
+
+const Ret = ({ret, children}) => {
+  return (
+    // 使用 Block 包起来，避免渲染出来位置不正确，导致开发工具无法选中元素
+    <Block>
+      {renderRet(ret, children)}
+    </Block>
+  );
 };
 
 Ret.propTypes = {
