@@ -1,6 +1,6 @@
 // @internal
 
-$at-activity-indicator-font-size: .875rem;
+$at-activity-indicator-font-size: var(--mx-fontSizes-sm);
 
 @import "~taro-ui/dist/style/components/activity-indicator.scss";
 @import '~taro-ui/dist/style/components/loading.scss';
