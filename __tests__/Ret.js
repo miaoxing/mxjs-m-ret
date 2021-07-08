@@ -7,4 +7,14 @@ describe('Ret', () => {
     const result = render(<Ret ret={RetObject.new({code: 1, message: 'error'})}/>);
     expect(result.container).toMatchSnapshot();
   });
+
+  test('empty ret show loading', () => {
+    const {queryByText} = render(<Ret/>);
+    expect(queryByText('加载中...')).not.toBeNull();
+  });
+
+  test('empty ret object show loading', () => {
+    const {queryByText} = render(<Ret ret={{}}/>);
+    expect(queryByText('加载中...')).not.toBeNull();
+  });
 });
