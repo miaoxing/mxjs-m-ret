@@ -14,6 +14,11 @@
     "preset": "jest-preset-miaoxing",
     "moduleNameMapper": {
       "@tarojs/components": "@tarojs/components/dist-h5/react"
+    },
+    "globals": {
+      "ENABLE_INNER_HTML": true,
+      "ENABLE_ADJACENT_HTML": true,
+      "ENABLE_SIZE_APIS": true
     }
   },
   "dependencies": {
