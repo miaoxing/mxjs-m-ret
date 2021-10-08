@@ -32,6 +32,7 @@
     "@testing-library/react": "^11.2.6"
   },
   "ciDependencies": {
+    "jest-preset-miaoxing": "miaoxing/jest-preset-miaoxing",
     "miaoxing": "miaoxing/miaoxing-js",
     "@miaoxing/dev": "miaoxing/dev"
   }
