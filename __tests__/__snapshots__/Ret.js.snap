@@ -7,6 +7,8 @@ exports[`Ret basic 1`] = `
       style="display: flex; height: 100vh; text-align: center; align-items: center; justify-content: center; flex-direction: column;"
     >
       <taro-image-core
+        mode="center"
+        src="https://gw.alipayobjects.com/zos/rmsportal/GIyMDJnuqmcqPLpHCSkj.svg"
         style="margin-bottom: 1rem;"
       />
       <taro-view-core
