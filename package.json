@@ -1,6 +1,6 @@
 {
   "name": "@mxjs/m-ret",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
@@ -24,11 +24,11 @@
   "dependencies": {
     "@tarojs/components": "^3.3.10",
     "taro-ui": "^3.0.0-alpha.10",
-    "miaoxing": "^0.2.5",
+    "miaoxing": "^0.3.0",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@miaoxing/dev": "^7.0.1",
+    "@miaoxing/dev": "^8.0.0",
     "@testing-library/react": "^11.2.6"
   },
   "ciDependencies": {
