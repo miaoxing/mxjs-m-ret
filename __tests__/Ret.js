@@ -4,8 +4,8 @@ import {Ret as RetObject} from 'miaoxing';
 
 describe('Ret', () => {
   test('basic', () => {
-    const result = render(<Ret ret={RetObject.err('error')}/>);
-    expect(result.container).toMatchSnapshot();
+    const {queryByText} = render(<Ret ret={RetObject.err('error')}/>);
+    expect(queryByText('error')).not.toBeNull();
   });
 
   test('empty ret show loading', () => {
