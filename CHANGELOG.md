@@ -1,3 +1,20 @@
+## [0.1.2](https://github.com/miaoxing/mxjs-m-ret/compare/v0.1.1...v0.1.2) (2022-01-12)
+
+
+### Features
+
+* **taro:** 限制 taro 为 3.3.x，3.4 有 BREAKING CHANGES ([7e4a4e8](https://github.com/miaoxing/mxjs-m-ret/commit/7e4a4e81df8a0ee3d896296f61b2c0119622e9f7))
+* 更新 taro 到 `^3.3.20` ([b9d7752](https://github.com/miaoxing/mxjs-m-ret/commit/b9d7752965693571cf0af7cd4973e242e5fd5035))
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.3.0` to `0.4.0`
+* **@miaoxing/dev:** upgrade from `8.0.0` to `8.0.1`
+
 ## [0.1.1](https://github.com/miaoxing/mxjs-m-ret/compare/v0.1.0...v0.1.1) (2021-10-28)
 
 
