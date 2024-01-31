@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/miaoxing/mxjs-m-ret/compare/v1.0.9...v1.1.0) (2024-01-31)
+
+
+### Features
+
+* 更新 `react` 支持 18 ([a709eb0](https://github.com/miaoxing/mxjs-m-ret/commit/a709eb0be41479c831dfcb6311205575d607c9a3))
+
 ## [1.0.9](https://github.com/miaoxing/mxjs-m-ret/compare/v1.0.8...v1.0.9) (2024-01-08)
 
 
